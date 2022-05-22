@@ -4,7 +4,7 @@ public class StaticExceptionMain {
     final static int value;
 
     static {
-        value = Integer.parseInt("Y-");
+        value = Integer.parseInt("5");
     }
 
     public static void main(String[] args) {
