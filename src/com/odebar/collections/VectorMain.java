@@ -1,6 +1,7 @@
 package com.odebar.collections;
 
 import java.util.Enumeration;
+import java.util.Objects;
 import java.util.Vector;
 
 public class VectorMain {
@@ -11,7 +12,7 @@ public class VectorMain {
         vector.add(1, null);
         vector.addAll(vector);
         System.out.println(vector);
-        vector.removeIf(e -> e == null);
+        vector.removeIf(Objects::isNull);
         vector.replaceAll(String::toUpperCase);
         System.out.println(vector);
         long counter = vector.stream().count();
