@@ -17,7 +17,6 @@ public class DataInputOutputStream {
 
             System.out.println(ex.getMessage());
         }
-
         // обратное считывание из файла
         try (DataInputStream dos = new DataInputStream(new FileInputStream("data/data.bin"))) {
             // записываем значения
