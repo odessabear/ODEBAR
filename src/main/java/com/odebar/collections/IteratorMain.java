@@ -2,7 +2,7 @@ package com.odebar.collections;
 
 import com.odebar.entity.Order;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class IteratorMain {
     public static void main(String[] args) {
@@ -23,9 +23,20 @@ public class IteratorMain {
 //        action.discountAction(bigAmount, orders, percent);
 
 //        functional approach
+
         orders.removeIf(order -> order.getAmount() <= bigAmount);
         orders.forEach(order -> order.setAmount(order.getAmount() * (100 - percent) / 100.0));
-        System.out.println(orders);
+        orders.forEach(System.out::println);
+
+        //stream
+
+//        orders.stream()
+//                .filter(order -> order.getAmount() <= bigAmount)
+//                .map(order -> {
+//                    order.setAmount(order.getAmount() * (100 - percent) / 100.0);
+//                    return order;
+//                })
+//                .collect(Collectors.toList());
 
     }
 }

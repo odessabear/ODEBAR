@@ -1,7 +1,5 @@
 package com.odebar.collections;
 
-import com.odebar.entity.Person;
-import com.odebar.entity.PersonNameComparator;
 import com.odebar.entity.Student;
 
 import java.util.ArrayList;

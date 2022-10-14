@@ -8,7 +8,6 @@ public class ExampleRunner {
         Example example = new Example(new ArrayList<>());
         List<Integer> list = example.getList();
         list.add(2);
-
         System.out.println(example.getList());
     }
 }
