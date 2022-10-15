@@ -12,12 +12,12 @@ public class ZipProgram {
              FileInputStream fis = new FileInputStream(filename);) {
             ZipEntry entry1 = new ZipEntry("notes.txt");
             zout.putNextEntry(entry1);
-            // считываем содержимое файла в массив byte
+            // СЃС‡РёС‚С‹РІР°РµРј СЃРѕРґРµСЂР¶РёРјРѕРµ С„Р°Р№Р»Р° РІ РјР°СЃСЃРёРІ byte
             byte[] buffer = new byte[fis.available()];
             fis.read(buffer);
-            // добавляем содержимое к архиву
+            // РґРѕР±Р°РІР»СЏРµРј СЃРѕРґРµСЂР¶РёРјРѕРµ Рє Р°СЂС…РёРІСѓ
             zout.write(buffer);
-            // закрываем текущую запись для новой записи
+            // Р·Р°РєСЂС‹РІР°РµРј С‚РµРєСѓС‰СѓСЋ Р·Р°РїРёСЃСЊ РґР»СЏ РЅРѕРІРѕР№ Р·Р°РїРёСЃРё
             zout.closeEntry();
         } catch (Exception ex) {
 

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class SDMain {
     public static void main(String[] args) {
         String filename = "data/people.dat";
-        // создадим список объектов, которые будем записывать
+        // СЃРѕР·РґР°РґРёРј СЃРїРёСЃРѕРє РѕР±СЉРµРєС‚РѕРІ, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґРµРј Р·Р°РїРёСЃС‹РІР°С‚СЊ
         ArrayList<Person> people = new ArrayList<Person>();
         people.add(new Person("Tom", 30, 175, false));
         people.add(new Person("Sam", 33, 178, true));
@@ -22,7 +22,7 @@ public class SDMain {
             System.out.println(ex.getMessage());
         }
 
-        // десериализация в новый список
+        // РґРµСЃРµСЂРёР°Р»РёР·Р°С†РёСЏ РІ РЅРѕРІС‹Р№ СЃРїРёСЃРѕРє
         ArrayList<Person> newPeople = new ArrayList<Person>();
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {
 

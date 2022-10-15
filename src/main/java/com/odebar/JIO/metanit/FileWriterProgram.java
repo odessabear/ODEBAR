@@ -6,10 +6,10 @@ import java.io.IOException;
 public class FileWriterProgram {
     public static void main(String[] args) {
         try (FileWriter writer = new FileWriter("data/notes3.txt", false)) {
-            // запись всей строки
+            // Р·Р°РїРёСЃСЊ РІСЃРµР№ СЃС‚СЂРѕРєРё
             String text = "Hello Gold!";
             writer.write(text);
-            // запись по символам
+            // Р·Р°РїРёСЃСЊ РїРѕ СЃРёРјРІРѕР»Р°Рј
             writer.append('\n');
             writer.append('E');
 
